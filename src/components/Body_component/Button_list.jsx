@@ -19,8 +19,8 @@ const btnList = [
 function Button_list() {
   return (
     <div className="flex ml-[52px] pl-0 pr-0 pt-0 bg-white pb-2 justify-center items-center ">
-      {btnList.map((name) => (
-        <Button names={name} />
+      {btnList.map((name,index) => (
+        <Button key={index} names={name} />
       ))}
     </div>
   );
