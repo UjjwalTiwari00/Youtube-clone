@@ -72,8 +72,8 @@ function Navbar() {
         {showSuggestion && (
           <div className="fixed bg-white w-[30rem] shadow-lg rounded-lg">
             <ul>
-              {suggestion.map((sugest) => (
-                <li
+              {suggestion.map((sugest,index) => (
+                <li key={index}
                   className="px-2 py-1 cursor-pointer"
                   onClick={() => {SetInputs(sugest)
                   SetShowSuggestion(false)
